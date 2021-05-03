@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c6f8ad6da3.js" crossorigin="anonymous"></script>
+    <title>Countries</title>
+</head>
+<body>
+    <!-- https://restcountries.eu/#rest-countries-users -->
+    <!-- ne prikaze drzav -->
+    <header class="header">
+        <div class="container">
+            <h1>Search countries</h1>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <input type="text" id="search" class="search" placeholder="Search countries">
+
+            <div class="dropdown" id="filter">
+                Filter by Region
+                <i class="fas fa-angle-down"></i>
+                <ul>
+                    <li>All</li>
+                    <li>Africa</li>
+                    <li>Americas</li>
+                    <li>Asia</li>
+                    <li>Europe</li>
+                    <li>Oceania</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <div class="modal" id="modal">
+        <div class="container">
+            <div class="modal__container">
+                <button class="modal__btn-close" id="modal-close">Go back</button>
+                <img class="modal__img" src="https://restcountries.eu/data/ala.svg" alt="">
+                <div class="modal__body">
+                </div>
+            </div>    
+        </div>
+    </div>
+
+    <section>
+        <div class="container countries" id="countries">
+            <h2>Countries loading...</h2>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
